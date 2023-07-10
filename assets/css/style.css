@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+.whole-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 125, 245);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.audio {
+    position: absolute;
+    width: 300px;
+    height: 54px;
+    bottom: 10px;
+    left: 5px;
+    opacity: 0.3;
+}
+
+.calculator {
+    background-color: #d87093;
+    width: 350px;
+    height: 410px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    z-index: 3;
+    box-shadow: 0px 0px 35px 17px #D87093;
+    border: 3px solid #c2436d;
+}
+
+.result {
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid rgb(120, 20, 214);
+    background-color: rgb(187, 125, 245);
+    margin-bottom: 15px;
+    font-size: medium;
+    color: rgb(233, 23, 93);
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.line-buttons {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 125, 245);
+    border: 1px solid rgb(120, 20, 214);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    margin: 10px;
+    color: rgb(183, 14, 70);
+    font-size: large;
+    font-weight: bold;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 6px 6px #BB7DF5;
+    border: 1px solid rgb(187, 125, 245);
+    font-size: x-large;
+}
+
+.first-img {
+    width: 90px;
+    position: absolute;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: first-img;
+    z-index: 4;
+}
+
+@keyframes first-img {
+    from {
+        height: 90px;
+        top: 20px;
+        right: 5px;
+        transform: rotate(10deg);
+    }
+
+    to {
+        height: 90px;
+        top: 480px;
+        right: 1155px;
+        transform: rotate(1300deg);
+    }
+}
+
+.second-img {
+    height: 125px;
+    right: 75px; 
+    bottom: 115px;
+    position: absolute;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: second-img;
+    z-index: 1;
+}
+
+@keyframes second-img {
+    from {
+        height: 125px;
+        transform: rotate(10deg);
+    }
+
+    to {
+        height: 125px;
+        transform: rotate(30deg);
+    }
+}
+
+.second-img-img {
+    height: 110px;
+    left: 75px; 
+    top: 60px;
+    position: absolute;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: second-img-img;
+    z-index: 2;
+}
+
+@keyframes second-img-img {
+    from {
+        height: 110px;
+        transform: rotate(10deg);
+    }
+
+    to {
+        height: 110px;
+        transform: rotate(-30deg);
+    }
+}
+
+
+
